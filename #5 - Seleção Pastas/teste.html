@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Selecione um artigo</p>
+
+<select id="mySelect" onchange="myFunction()">
+    <option value="default" selected="selected">Todos</option>
+    <option value="1">Post desmonstrativo 01</option>
+    <option value="2">Post desmonstrativo 02</option>
+</select>
+
+
+<p id="1"></p>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("mySelect").value;
+  document.getElementById("1").innerHTML = "Artigo Selecionado " + x;
+}
+</script>
+
+</body>
+</html>
