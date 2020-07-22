@@ -2,7 +2,7 @@
 
 Projetos em JS
 
-Aulas feitas durante a Quarentena.
+Processo realizado durante a quarentena
 
 Esses foram meus primeiros códigos feitos em JS e 
 <br>
