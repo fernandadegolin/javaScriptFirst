@@ -14,5 +14,5 @@ Processo realizado durante a quarentena
     bar = 9;
 
     console.log(foo, bar); // => 1, 9
-    ```
+    
 
