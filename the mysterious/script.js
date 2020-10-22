@@ -61,6 +61,7 @@ class TextScramble {
     'The Mysterious',
   ]
   
+  
   const el = document.querySelector('.text')
   const fx = new TextScramble(el)
   
