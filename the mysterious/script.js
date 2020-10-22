@@ -51,6 +51,7 @@ class TextScramble {
         this.frame++
       }
     }
+    
     randomChar() {
       return this.chars[Math.floor(Math.random() * this.chars.length)]
     }
