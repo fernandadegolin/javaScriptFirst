@@ -1,5 +1,4 @@
 var primeiraOlimpiada = 1896;
-
 var anoAtual= parseInt(prompt("Em que ano estamos?"));
 
 // Condicao 
