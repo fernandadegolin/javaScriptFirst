@@ -10,15 +10,20 @@ const conta1 = new ContaCorrente(1001, cliente1);
 const conta2 = new ContaCorrente(1002, cliente2);
 
 
+console.log(conta2);
+// Número de contas
+
+
 // Execução operações
 // Depositar
 conta1.depositar(1000)
 conta2.depositar(500);
 // Sacar
-conta1.sacar(50);c
+conta1.sacar(50);
 // Transferir
 conta1.transferir(100, conta2);
-console.log(conta2);
+
+
 
 
 
