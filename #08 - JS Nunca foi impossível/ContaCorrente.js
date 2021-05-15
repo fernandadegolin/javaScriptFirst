@@ -3,7 +3,7 @@ import { Cliente } from "./Cliente.js";
 export class ContaCorrente{
     static numeroContas = 0; //Atributo estatico
     agencia;
-    _cliente;
+    _cliente; 
     _saldo = 0;
 
         // Assessor do cliente
