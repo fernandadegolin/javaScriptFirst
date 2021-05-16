@@ -7,7 +7,7 @@ export class ContaCorrente{
     _saldo = 0;
 
         // Assessor do cliente
-        set cliente(novoValor){
+        set cliente(novoValor){ 
             if (novoValor instanceof Cliente){
                 this._cliente = novoValor;
             }
