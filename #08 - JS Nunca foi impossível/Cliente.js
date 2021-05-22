@@ -1,6 +1,4 @@
 export class Cliente{
-    nome;
-    _cpf;
 
         // Assessor CPF
         get cpf(){

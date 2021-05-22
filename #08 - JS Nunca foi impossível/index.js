@@ -1,27 +1,33 @@
 import { Cliente } from "./Cliente.js";
+import { Conta } from "./Conta.js";
 import { ContaCorrente } from "./ContaCorrente.js";
+import { ContaPoupanca } from "./ContaPoupanca.js";
 
 // Execução clientes
 const cliente1 = new Cliente('Fernanda Degolin', 11122233344);
-const cliente2 = new Cliente ('Jessica Crusco', 12345678900);
+const cliente2 = new Cliente('Jessica Crusco', 12345678900);
 
-// Execução contas
-const conta1 = new ContaCorrente(1001, cliente1);
-const conta2 = new ContaCorrente(1002, cliente2);
+// Conta Corrente
+const contaCorrente = new ContaCorrente (cliente1, cliente2, 1001);
 
+// Conta Poupança
+const contaPoupanca = new ContaPoupanca (50, cliente1, cliente2, 1001)
 
-console.log(conta2);
-// Número de contas
 
 
 // Execução operações
 // Depositar
-conta1.depositar(1000)
-conta2.depositar(500);
+contaCorrente.depositar(450);
+contaCorrente.depositar(100);
+
 // Sacar
-conta1.sacar(50);
+contaCorrente.sacar(50);
+
 // Transferir
-conta1.transferir(100, conta2);
+
+
+console.log(contaCorrente);
+console.log(contaPoupanca)
 
 
 
