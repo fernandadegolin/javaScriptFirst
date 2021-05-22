@@ -1,5 +1,6 @@
 import { Cliente } from "./Cliente.js";
 import { ContaCorrente } from "./ContaCorrente.js";
+import { ContaPoupanca } from "./ContaPoupanca.js";
 
 // Execução clientes
 const cliente1 = new Cliente('Fernanda Degolin', 11122233344);
@@ -9,8 +10,11 @@ const cliente2 = new Cliente ('Jessica Crusco', 12345678900);
 const conta1 = new ContaCorrente(1001, cliente1);
 const conta2 = new ContaCorrente(1002, cliente2);
 
+// Conta Poupança
+const contaPoupanca = new ContaPoupanca (50, cliente1, cliente2, 1001)
 
-console.log(conta2);
+
+console.log(contaPoupanca);
 // Número de contas
 
 

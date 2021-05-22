@@ -2,9 +2,6 @@ import { Cliente } from "./Cliente.js";
 
 export class ContaCorrente{
     static numeroContas = 0; //Atributo estatico
-    agencia;
-    _cliente;
-    _saldo = 0;
 
         // Assessor do cliente
         set cliente(novoValor){
@@ -27,9 +24,9 @@ export class ContaCorrente{
         constructor(agencia, cliente){
             this.agencia = agencia;
             this._cliente = cliente;
+            this._saldo = 0;
             ContaCorrente.numeroContas += 1;
         
-            // this._saldo = saldo; >>>> No caso do valor não foi preciso, pois já defini que o saldo se inicia com o valor zero.
         }
 
 
