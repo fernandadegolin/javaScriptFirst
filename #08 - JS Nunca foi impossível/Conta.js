@@ -8,7 +8,7 @@ export class Conta {
     // Assessor do cliente
     set cliente(novoValor){
         if (novoValor instanceof Cliente){
-            this._cliente = novoValor;
+            this._cliente = novoValor; 
         }
     }
 
