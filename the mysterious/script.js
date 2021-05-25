@@ -31,7 +31,7 @@ class TextScramble {
         let { from, to, start, end, char } = this.queue[i]
         if (this.frame >= end) {
           complete++
-          output += to
+          output += to 
         } else if (this.frame >= start) {
           if (!char || Math.random() < 0.28) {
             char = this.randomChar()
