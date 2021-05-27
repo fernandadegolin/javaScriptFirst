@@ -8,10 +8,15 @@ const diretor = new Diretor ('Jodie Comer', 200000, 35055599900)
 diretor.cadastrarSenha('1234');
 
 const gerente = new Gerente ('Eve Polastri', 100000, 15015015099)
+gerente.cadastrarSenha('12345');
 
-const logado = SistemaAutenticacao.login(diretor, '1234');
+const cliente = new Cliente ('Fernanda Degolin', 35055544563, 'pexion');
 
-console.log(logado)
+const diretorLogado = SistemaAutenticacao.login(diretor, '1234');
+const gerenteLogado = SistemaAutenticacao.login(gerente, '12345');
+const clienteLogado = SistemaAutenticacao.login(cliente, 'pexion')
+
+console.log(gerente, diretor, cliente);
 
 
 
