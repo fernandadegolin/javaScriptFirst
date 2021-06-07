@@ -16,7 +16,7 @@ const diretorLogado = SistemaAutenticacao.login(diretor, '1234');
 const gerenteLogado = SistemaAutenticacao.login(gerente, '12345');
 const clienteLogado = SistemaAutenticacao.login(cliente, 'pexion')
 
-console.log(gerenteLogado);
+console.log(diretorLogado, gerenteLogado, clienteLogado);
 
 
 
