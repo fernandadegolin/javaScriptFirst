@@ -7,7 +7,7 @@ html {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
   background: rgba(10,0,200,.25);
 }
 
