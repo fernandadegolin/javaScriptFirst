@@ -4,7 +4,6 @@ function sortear ()
 console.log(numeroMagico)
  var numeroCerto = prompt('Mande seu número de sorte') == numeroMagico
  
- 
  //condicao do resultado
  if(numeroCerto) {
    paragrafoResultado.innerHTML = ('Você Ganhou, PARABENS!')
