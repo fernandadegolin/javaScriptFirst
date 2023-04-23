@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input de dados</title>
+  </head>
+  <body>
+    <form class="formulario">
+      <label for="">Nome</label>
+      <input type="text" placeholder="digite seu nome" class="nome" required />
+
+      <label for="">Sobrenome</label>
+      <input
+        type="text"
+        placeholder="digite seu sobrenome"
+        class="sobrenome"
+        required
+      />
+
+      <label for="">Ano de Nascimento</label>
+      <input
+        type="text"
+        placeholder="digite seu ano de nascimento"
+        class="ano"
+        required
+      />
+
+      <button>Enviar</button>
+      <button type="reset">Limpar</button>
+    </form>
+
+    <div>
+      <p id="dados">Dados</p>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
