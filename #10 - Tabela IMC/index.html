@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Modelo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section class="container">
+      <h1>Tabela IMC</h1>
+      <p class="info"></p>
+
+      <div class="tabela">
+        <div>
+          <h4 class="imc">IMC</h4>
+        </div>
+        <div>
+          <h4 class="nivel">Resultado</h4>
+        </div>
+      </div>
+      <div id="formulario">
+        <label for="peso">Peso</label>
+        <input type="text" id="peso" placeholder="Digite seu peso" />
+
+        <label for="altura">Altura</label>
+        <input type="text" id="altura" placeholder="Digite sua altura" />
+
+        <button onclick="calcular()">Calcular</button>
+      </div>
+
+      <div>
+        <h3>Dados</h3>
+        <span id="dados"></span>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

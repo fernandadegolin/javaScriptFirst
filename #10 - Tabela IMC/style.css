@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+:root {
+  --primary-color: rgb(23 95 46);
+  --primary-color-darker: rgb(9, 48, 56);
+  --primary-color-input: rgb(74 103 109);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: "Open sans", sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+.info {
+  font-size: 14px;
+}
+
+.tabela {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tabela h4 {
+  margin-bottom: 0;
+}
+
+.tabela p {
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0;
+}
+
+div input,
+div label,
+div button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+div label {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 12px;
+}
+
+div input {
+  font-size: 12px;
+  height: 50px;
+  padding: 0 20px;
+  color: var(--primary-color-input);
+}
+
+div input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+div button {
+  border-radius: 10px;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+div button:hover {
+  background: #fff;
+  color: var(--primary-color);
+  border: 3px solid var(--primary-color);
+}
+
+span {
+  font-size: 14px;
+  color: var(--primary-color);
+}
