@@ -30,12 +30,12 @@ for (let e of nivelImc) {
 }
 
 function getNivelImc(imc) {
-  if (imc <= 18.5) return nivelImc[0];
-  if (imc >= 18.5 && imc <= 24.9) return nivelImc[1];
-  if (imc >= 24.9 && imc <= 29.9) return nivelImc[2];
-  if (imc >= 29.9 && imc <= 34.9) return nivelImc[3];
-  if (imc >= 34.9 && imc <= 39.9) return nivelImc[4];
   if (imc >= 39.9) return nivelImc[5];
+  if (imc >= 34.9) return nivelImc[4];
+  if (imc >= 29.9) return nivelImc[3];
+  if (imc >= 24.9) return nivelImc[2];
+  if (imc >= 18.5) return nivelImc[1];
+  if (imc < 18.5) return nivelImc[0];
 }
 
 function calcular() {
@@ -45,15 +45,19 @@ function calcular() {
   const peso = Number(inputPeso.value);
   const altura = Number(inputAltura.value);
 
-  const imc = (peso / altura ** 2).toFixed(2);
+  const imc = (peso / altura ** 2).toFixed(1);
   const nivelImc = getNivelImc(imc);
 
-  resultado.innerHTML =
-    !peso || !altura
-      ? "Valor Inválido"
-      : `Seu IMC é <strong>${imc}</strong> e o seu resultado <strong>${getNivelImc(
-          imc
-        )}</strong>`;
+  const label = `Seu IMC é <strong>${imc}</strong> e o seu resultado <strong>${nivelImc}</strong>`;
+  const isValido = !peso || !altura ? "Valor Invalido" : label;
+
+  resultado.innerHTML = "";
+
+  const paragrafo = document.createElement("p");
+  paragrafo.classList.add("resultado");
+  paragrafo.innerHTML = isValido;
+
+  resultado.appendChild(paragrafo);
 
   inputPeso.value = "";
   inputAltura.value = "";

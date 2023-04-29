@@ -45,6 +45,13 @@ body {
   margin: 0;
 }
 
+.resultado {
+  background: var(--primary-color);
+  color: #fff;
+  padding-left: 10px;
+  font-weight: 300;
+}
+
 div input,
 div label,
 div button {
