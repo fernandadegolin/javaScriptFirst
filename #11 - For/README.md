@@ -3,7 +3,17 @@
 ## Clássico
 
 Geralmente com iteráveis (array ou string)
+```
+const people = ["fernanda", "degolin"];
 
+for (let i = 0; i < people.length; i++) {
+  console.log(people[i]);
+}
+
+//RESULTADO
+fernanda
+degolin
+```
 ## In
 
 Retorna index ou keys (string, array ou objetos)
@@ -18,8 +28,8 @@ for (let i in people) {
 }
 
 //RESULTADO
-fernanda;
-degolin;
+fernanda
+degolin
 ```
 
 ## Of
