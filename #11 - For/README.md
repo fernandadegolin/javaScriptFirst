@@ -1,5 +1,7 @@
 # FOR
 
+
+
 ## Clássico
 
 Geralmente com iteráveis (array ou string)
