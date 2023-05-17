@@ -35,3 +35,14 @@ degolin
 ## Of
 
 Retorna valor em si (iteráveis, array ou string)
+```
+const people = ["fernanda", "degolin"];
+
+for (let i of people) {
+  console.log(i);
+}
+
+//RESULTADO
+fernanda
+degolin
+```
