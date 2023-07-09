@@ -6,4 +6,4 @@ Processo realizado durante a quarentena
 ## Primeiros códigos feitos em JS      
 <br> 
 
-### Atualizado em 12.05.2023 
+### Atualizado em 09.06.2023 
